@@ -6,7 +6,7 @@ function checkSections() {
     const triggerBottom = windows.innerHeight;
 
     sections.foreach(section => {
-        const sectionTop = section.getBoudingClientRect().top;
+        const sectionTop = section.getBoundingClientRect().top;
 
         if(sectionTop < triggerBottom) {
             section.classList.add('active');
@@ -16,3 +16,11 @@ function checkSections() {
         }
     })
 }
+
+let menu = document.querySelector('.menu');
+let nav = document.querySelector('.nav');
+menu.onclick = function() {
+    menu.classList.toggle('show');
+    nav.classList.toggle('show');
+}
+ 

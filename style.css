@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400&family=Qwitcher+Grypen:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -84,4 +84,80 @@ color: #000;
     cursor: pointer;
     transition: 0.5s;
     z-index: 2;
+}
+.menu.show {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #f1d708;
+    transform: rotate(450deg);
+    border-radius: 50%;
+}
+.menu::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #f1d708;
+    border-radius: 6px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+
+}
+.menu::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #f1d708;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1a;
+    transform: translateX(-200%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+    transition: 0.5s;
+}
+.nav.show {
+    transform: translateX(0);
+}
+.nav div {
+    display: flex;
+    flex-direction: column;
+}
+.links {
+  width: 50%;  
+}
+.image {
+    height: 80vh;
+    width: 45%;
+}
+image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav div a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f1d708;
+    text-decoration: 0;
+    transition: 0.5s;
+    font-size: 80px;
+    width: fit-content;
+    font-family:'Abril Fatface', cursive ;
+}
+.nav div a:hover {
+    padding-left: 25px;
+    color: #fff;
+    border-left: 8px solid #f1d708;
 }
