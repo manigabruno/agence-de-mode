@@ -161,3 +161,124 @@ image img {
     color: #fff;
     border-left: 8px solid #f1d708;
 }
+/* the best css */
+.the-best {
+padding: 100px;
+height: 80vh;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.the-best img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.the-best .left {
+    width: 40%;
+}
+.the-best .right {
+    width: 50%;
+}
+.title {
+    color: #f1d708;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.small_text {
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+/* picture */
+
+.picture {
+    width: 100%;
+    padding: 10px 5%;
+    height: 80vh;
+    overflow: hidden;
+}
+.image_content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(src/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.image_content .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: 0.5s ease-out;
+}
+.image_content:hover .content {
+    transform: translateY(0);
+}
+.picture .content h2 {
+    text-transform: capitalize;
+    font-size: 70px;
+}
+/* services */
+
+.services {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+}
+.services img {
+    width: 150px;
+}
+.services h2 {
+    font-stretch: 20px;
+    margin-bottom: 30px;
+} 
+.list_services {
+    display: flex;
+    justify-content: space-between;
+}
+.services .box {
+    text-align: center;
+    padding: 40px 45px;
+    
+}
+/* contact */
+.contact {
+    padding: 20px 5%;
+    width: 100%;
+}
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container .form_img {
+    width: 50%;
+    height: 500px;
+}
+.container .form_img  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
