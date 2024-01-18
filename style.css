@@ -282,3 +282,27 @@ form {
     justify-content: center;
     flex-direction: column;
 }
+label {
+    padding: 10px 0;
+}
+input, textarea {
+    background-color: transparent;
+    border: 1px solid #f1d708;
+    padding: 10px 5px;
+    color: #fff;
+    outline: 0;
+    resize: none;
+}
+form button {
+    width: fit-content;
+   margin-top: 20px;
+   padding: 10px 20px;
+   color: #000;
+   background-color: #f1d708;
+   border: 0;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   cursor: pointer;
+
+}
