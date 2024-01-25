@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
 section {
     color: #fff;
     width: 100%;
@@ -101,7 +102,6 @@ color: #000;
     border-radius: 6px;
     transform: rotate(-45deg);
     transition: 0.5s;
-
 }
 .menu::before {
     content: "";
@@ -254,7 +254,6 @@ align-items: center;
 .services .box {
     text-align: center;
     padding: 40px 45px;
-    
 }
 /* contact */
 .contact {
@@ -304,5 +303,101 @@ form button {
    font-weight: bold;
    letter-spacing: 1px;
    cursor: pointer;
-
+   margin-bottom: 40px;
 }
+/* footer */
+ footer {
+    text-align: center;
+    background-color: #000;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+ 
+ /* responsive */
+ @media (max-width: 1007px) {
+    .header {
+        padding: 20px;
+        background-color: #f1d708;
+    }
+    .header h1 {
+        text-align: center;
+        font-size: 100px;
+    }
+    .btn_style {
+        font-style: 12px ;
+    }
+    .menu {
+        height: 30px;
+        width: 30px;
+    }
+    .menu.show {
+        height: 30px;
+        width: 30px;
+    }.nav .image {
+        display: none;
+    }
+    .nav .links {
+        width: 100%;
+    }
+    .nav {
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .links a {
+        font-size: 35px;
+        margin: 0;
+        padding: 25px;
+        width: 100%;
+        background-color: #f1d708;
+        border: 1px solid #1c1c1a;
+        color: #000
+    }
+    .nav .links a:hover {
+        color: #1c1c1a;
+        border-left: 12px solid #000;
+    }
+    .the_best {
+        margin-top: 100px;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .the-best .left, .the-best .right  {
+        width: 100% ;
+    }
+    .the-best .left {
+        margin-top: 25px;
+    }
+   .image_content {
+    height: 450px;
+   }
+   .picture .content h2 {
+    font-size: 25px;
+    text-align: center;
+   }
+   .title {
+    font-size: 29px;
+   }
+   .services {
+    margin-top: -100px;
+   }
+   .List_services {
+    flex-direction: column;
+   }
+   .list_services .box {
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid #f1d708
+   }
+   form {
+    width: 100%;
+   }
+   .form_img {
+    display: none;
+   }
+
+ }

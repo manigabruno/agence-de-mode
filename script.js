@@ -3,7 +3,7 @@ const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', checkSections);
 
 function checkSections() {
-    const triggerBottom = windows.innerHeight;
+    const triggerBottom = window.innerHeight;
 
     sections.foreach(section => {
         const sectionTop = section.getBoundingClientRect().top;
